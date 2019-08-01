@@ -9,7 +9,6 @@ comments: false
 
 `frp` 是一款内网穿透工具， 相关介绍可以查看`github`主页，这里不再一一介绍 ，主页地址：https://github.com/fatedier/frp
 
-
 目前我需要开发联调微信公众号开发，于是想办法把内网的网页发布到公网的一个域名上实现实时真实数据调试。
 
 ## 配置
@@ -35,9 +34,8 @@ subdomain_host = 711xd.com // 发布公网的根域名
 
 配置文件设置完成后在服务器运行 `./frps -c frps.711xd.com.ini`, 完成启动，看下有没有什么报错。
 
-
-
 ### client 端配置文件
+
 ```ini
 [common]
 server_addr = xx.xx.xx.xx  // 上面运行 frps 的服务器公网地址
@@ -48,7 +46,7 @@ type = http //类型
 local_ip = 127.0.0.1 // 转发的地址，如果在内网其它机器做的转发，需要把地址换成自己的内网iP
 local_port = 80 // 本机 WEB服务监听端口
 use_encryption = false // 是否加密
-use_compression = true //是否压缩 
+use_compression = true //是否压缩
 
 subdomain = mp // 使用哪个子域名
 host_header_rewrite = hdzy.local // 本地开发使用的host
@@ -56,10 +54,9 @@ host_header_rewrite = hdzy.local // 本地开发使用的host
 
 配置完成后 运行`./frpc -c frpc.hdzy.local.ini`, 这时候访问 `http://mp.711xd.com:7777`就可看到本地 `http://hdzy.local`的网页服务了。
 
-
 ## 如何去除端口号访问？
 
-现在可以使用域名+端口的方式访问网页了，但是微信配置输入框中提示是不支持再端口的网页链接的，我们还需要使用nginx的反向代理来把端口与隐藏起来。
+现在可以使用域名+端口的方式访问网页了，但是微信配置输入框中提示是不支持再端口的网页链接的，我们还需要使用 nginx 的反向代理来把端口与隐藏起来。
 
 ```nginx
 server {
@@ -77,5 +74,3 @@ server {
 使用 `Nginx` 的反向代理功能把端口号隐藏起来。
 现在访问下不带端口的域名试试
 你会回来打赏的！
-
-![来嘛客官](http://oss.ipaoyun.com/blog/2019/01-11/pIwvrbvA0PoRHw1sfPOjjqVdFSKPWYxk6CBElgZu.jpeg)

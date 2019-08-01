@@ -31,14 +31,14 @@ html {
   line-height: 1.75em;
   background: #ebebeb;
   position: relative;
-  font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "WenQuanYi Micro Hei", "Microsoft YaHei UI", "Microsoft YaHei", sans-serif;
+  font-family: "SF Pro SC", "SF Pro Text", "SF Pro Icons", PingFang SC, Lantinghei SC, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
 }
 body {
   color: #505050;
   line-height: 1.75em;
   background: #ebebeb;
   position: relative;
-  font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "WenQuanYi Micro Hei", "Microsoft YaHei UI", "Microsoft YaHei", sans-serif;
+  font-family: "SF Pro SC", "SF Pro Text", "SF Pro Icons", PingFang SC, Lantinghei SC, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
 }
 h1,
 h2,
@@ -277,9 +277,9 @@ pre {
   overflow: hidden;
   white-space: nowrap;
   background-image: -webkit-linear-gradient(left, #cddc39, #e67e22 25%, #cddc39 50%, #e67e22 75%, #cddc39) !important;
-  -webkit-text-fill-color: transparent!important;
-  -webkit-background-clip: text!important;
-  background-size: 200% 100%!important;
+  -webkit-text-fill-color: transparent !important;
+  -webkit-background-clip: text !important;
+  background-size: 200% 100% !important;
   animation: masked-animation 2s infinite linear !important;
 }
 .main-header .main-header-box .branding h2:hover {
@@ -482,8 +482,9 @@ pre {
   overflow: hidden;
 }
 .post .post-body p {
-  font-size: 1em;
-  line-height: 1.5;
+  font-size: 1.15em;
+  line-height: 1.8;
+  margin: 1em 0;
 }
 .post .post-body p img {
   max-width: 100%;
@@ -503,7 +504,7 @@ pre {
 .post .post-footer .tag-list .post-meta .fa-wrap {
   margin-right: 10px;
 }
-.post .post-footer .tag-list .tags-meta a:nth-child(n+2) {
+.post .post-footer .tag-list .tags-meta a:nth-child(n + 2) {
   margin-left: 4px;
 }
 .post .post-footer .tag-list a {
@@ -519,41 +520,34 @@ pre {
   main post content
 ====================================================*/
 .post-content {
-  font: 400 16px/1.62 "Georgia", "Xin Gothic", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei", sans-serif;
   color: #333;
 }
 .post-content h1 {
-  font-family: "Georgia", "Xin Gothic", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei", "SimSun", sans-serif;
   color: #333;
   font-size: 1.8em;
   margin: 0.67em 0;
 }
 .post-content h2 {
-  font-family: "Georgia", "Xin Gothic", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei", "SimSun", sans-serif;
   color: #333;
   font-size: 1.5em;
   margin: 0.83em 0;
 }
 .post-content h3 {
-  font-family: "Georgia", "Xin Gothic", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei", "SimSun", sans-serif;
   color: #333;
   font-size: 1.17em;
   margin: 1em 0;
 }
 .post-content h4 {
-  font-family: "Georgia", "Xin Gothic", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei", "SimSun", sans-serif;
   color: #333;
   font-size: 1em;
   margin: 1.6em 0 1em 0;
 }
 .post-content h5 {
-  font-family: "Georgia", "Xin Gothic", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei", "SimSun", sans-serif;
   color: #333;
   font-size: 1em;
   margin: 1.6em 0 1em 0;
 }
 .post-content h6 {
-  font-family: "Georgia", "Xin Gothic", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei", "SimSun", sans-serif;
   color: #333;
   font-size: 1em;
   margin: 1.6em 0 1em 0;
@@ -562,9 +556,6 @@ pre {
 .post-content > h1 {
   margin-top: 0;
   font-size: 2em;
-}
-.post-content p {
-  font-size: 15px;
 }
 .post-content a {
   word-wrap: break-word;
@@ -917,7 +908,7 @@ pre {
   border: 1px solid #ebebeb;
   padding: 2px 7px;
   color: #959595;
-  font-size: 1em!important;
+  font-size: 1em !important;
   line-height: 1.5em;
   display: inline-block;
   margin: 0 5px 5px 0;
@@ -997,7 +988,7 @@ pre {
   border: 1px solid #ccc;
 }
 .widget #search-form #result-wrap:before {
-  content: '';
+  content: "";
   position: absolute;
   display: inline-block;
   border-width: 0 12px 12px 12px;
@@ -1007,7 +998,7 @@ pre {
   top: -12px;
 }
 .widget #search-form #result-wrap:after {
-  content: '';
+  content: "";
   position: absolute;
   display: inline-block;
   border-width: 0 12px 12px 12px;
@@ -1080,7 +1071,7 @@ pre {
   list-style: none;
 }
 #article-toc .toc {
-  padding-left: 2em;
+  padding-left: 0em;
 }
 #article-toc .toc .toc-item .toc-link {
   display: block;

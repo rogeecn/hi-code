@@ -13,7 +13,7 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://711xd.com
+url: https://www.711xd.com
 root: /
 permalink: p/:abbrlink/
 abbrlink:
@@ -81,4 +81,7 @@ theme: snippet
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: git@e.coding.net:ipao/711xd.com.git
+  branch: master
+  message: new posts
