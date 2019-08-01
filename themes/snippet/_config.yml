@@ -8,14 +8,20 @@ menu:
 - page: 首页
   url: /
   icon:
-- page: 前端
-  url: /categories/前端/
+- page: Linux
+  url: /tags/Linux/
   icon:
-- page: 后端
-  url: /categories/后端/
+- page: PHP
+  url: /tags/php/
   icon:
 - page: 工具
-  url: /categories/工具/
+  url: /tags/tools/
+  icon:
+- page: 读书
+  url: /tags/读书/
+  icon:
+- page: MySQL
+  url: /tags/MySQL/
   icon:
 - page: 时间轴
   url: /archives/
@@ -39,7 +45,6 @@ widgets:
   - search
   - notification
   - social
-  - category
   - archive
   - tagcloud
   - friends
@@ -108,6 +113,10 @@ tagcloud:
 links:
   - Hexo官网: https://hexo.io/zh-cn/
   - 爱泡云: https://ipaoyun.com
+  - 数据库内核月报: http://mysql.taobao.org/monthly/
+  - Linux运维日志: https://www.centos.bz/
+  - 廖雪峰的官方网站: https://www.liaoxuefeng.com/
+  - 阮一峰的网络日志: http://www.ruanyifeng.com/blog/
 
 
 # 主题自定义个性化配置
@@ -117,7 +126,7 @@ branding: Seven Eleven Developer
 
 ## 设置banner背景图片
 banner:
-    img: http://snippet.shenliyang.com/img/banner.jpg
+    img: ./img/banner.jpg
 
 ## 首页列表底部面板
 homePanel: true
@@ -163,7 +172,7 @@ reward:
 
 ## Valine评论
 valine:
-   enable: true
+   enable: false
    appId: xOKV9J4UeQAtVkvnJC7Kq2Jn-gzGzoHsz
    appKey: erIpQac4azoCmgfBB7Dl9maa
    placeholder: 说点什么吧
